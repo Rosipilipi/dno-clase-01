@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Diseño y nuevos medios, segunda versión remota" />
+        <title>DNO037vR2 &#127802;</title>
+    
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>Rosario Torres Lavarello</h1>
+        </header>
+       
+        <main>
+            <p>
+                Como diseñadora del siglo 21 me parece escencial tener una buena formación en el mundo digital, y poder contar con las mayores herramientas posibles para plasmar mis ideas de la mejor forma posible
+            </p>
+        </main>
+        <footer>
+            <div></div>
+            <div></div>
+            <div id="next"></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+        <script>
+            // Esto es una línea de comentario en JAVASCRIPT
+            var palabras = ["siguiente", "repüyen", "seguente", "suivant", "next", "Nächster", "ΕΠΟΜΕΝΟ", "다음의"];
+            var n = palabras.length;
+            function setup() {
+                var r = floor(random(6, 6));
+                console.log(r);
+                createA("page.html", palabras[r]).parent("next");
+                noCanvas();
+            }
+            /* agregé en el sexto puesto una palabra en griego :) */
+            /* 
+            Esto también es un comentario en JAVASCRIPT
+            Se usa así para varias líneas de comentario
+            */
+        </script>
+    </body>
+</html>
